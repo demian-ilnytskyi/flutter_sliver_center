@@ -12,7 +12,6 @@ class SliverCenter extends SingleChildRenderObjectWidget {
   }
 }
 
-// RenderObject class for SliverCenter
 class _RenderSliverCenter extends RenderSliver
     with RenderObjectWithChildMixin<RenderSliver> {
   _RenderSliverCenter();
@@ -118,8 +117,19 @@ class _RenderSliverCenter extends RenderSliver
           }
           if (parentSize != null) {
             final childConstaints = child!.constraints;
-            final childSize = childConstaints.crossAxisExtent;
-            final horizontalPadding = parentSize - childSize;
+            final double childSize;
+
+            final double horizontalPadding;
+
+            childSize = childConstaints.crossAxisExtent;
+            if (child is RenderSliverConstrainedCrossAxis) {
+              final childMaxExtent =
+                  (child as RenderSliverConstrainedCrossAxis).maxExtent;
+              horizontalPadding = childSize - childMaxExtent;
+            } else {
+              horizontalPadding = parentSize - childSize;
+            }
+
             parentData.paintOffset = Offset(horizontalPadding / 2, 0);
             leftPaddingAdded = true;
             return;

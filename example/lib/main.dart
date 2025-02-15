@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:sliver_center/sliver_center.dart';
 
 void main() {
@@ -26,26 +25,65 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: CustomScrollView(
         slivers: [
-          SliverLayoutBuilder(
-            builder: (context, constraints) => SliverConstrainedCrossAxis(
-              maxExtent: constraints.crossAxisExtent * 0.5,
-              sliver: SliverCenter(
-                sliver: SliverList.builder(
-                  itemBuilder: (context, index) {
-                    final color = index % 2 == 0 ? Colors.red : Colors.blue;
-                    return Container(
-                      height: 100,
-                      width: double.infinity,
-                      margin: EdgeInsets.only(
-                        bottom: 10,
-                      ),
-                      color: color,
-                    );
-                  },
+          SliverCrossAxisGroup(
+            slivers: [
+              SliverCrossAxisExpanded(
+                flex: 1,
+                sliver: SliverCenter(
+                  sliver: SliverConstrainedCrossAxis(
+                    maxExtent: 100,
+                    sliver: SliverList.builder(
+                      itemBuilder: (context, index) {
+                        final color = index % 2 == 0 ? Colors.red : Colors.blue;
+                        return Container(
+                          height: 100,
+                          width: double.infinity,
+                          margin: EdgeInsets.only(
+                            bottom: 10,
+                          ),
+                          color: color,
+                        );
+                      },
+                    ),
+                  ),
                 ),
               ),
-            ),
-          )
+              SliverConstrainedCrossAxis(
+                maxExtent: 1,
+                sliver: SliverToBoxAdapter(
+                  // Add the divider here
+                  child: Container(
+                    height: 10000, // Height of the divider line
+                    color: Colors.grey, // Color of the divider line
+                  ),
+                ),
+              ),
+              SliverCrossAxisExpanded(
+                flex: 1,
+                sliver: SliverLayoutBuilder(
+                  builder: (context, constraints) => SliverConstrainedCrossAxis(
+                    maxExtent: constraints.crossAxisExtent * 0.5,
+                    sliver: SliverCenter(
+                      sliver: SliverList.builder(
+                        itemBuilder: (context, index) {
+                          final color =
+                              index % 2 == 0 ? Colors.red : Colors.blue;
+                          return Container(
+                            height: 100,
+                            width: double.infinity,
+                            margin: EdgeInsets.only(
+                              bottom: 10,
+                            ),
+                            color: color,
+                          );
+                        },
+                      ),
+                    ),
+                  ),
+                ),
+              )
+            ],
+          ),
         ],
       ),
     );
