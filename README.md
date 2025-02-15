@@ -20,10 +20,10 @@ Wrap your sliver child with `SliverCenter` to center it.  `SliverCenter` works w
   </th>
   <tr>
     <th>
-    <a href="https://github.com/DemienIlnutskiy/sliver_center/blob/main/example/lib/main.dart"><img id="big_screen_preview" src='assets/read_me/big_screen_preview.png'/></a>
+    <a href="https://github.com/DemienIlnutskiy/sliver_center/blob/main/example/lib/main.dart"><img id="big_screen_preview" src='big_screen_preview.png'/></a>
     </th>
     <th>
-    <a href="https://github.com/DemienIlnutskiy/sliver_center/blob/main/example/lib/main.dart"><img id="small_screen_preview" src='assets/read_me/small_screen_preview.png'/></a>
+    <a href="https://github.com/DemienIlnutskiy/sliver_center/blob/main/example/lib/main.dart"><img id="small_screen_preview" src='small_screen_preview.png'/></a>
     </th>
   </tr>
 </p>
