@@ -1,7 +1,7 @@
 name: sliver_center
-description: "A new Flutter package project."
+description: "Sliver Center For CustomScrollView"
 version: 0.0.1
-homepage:
+homepage: https://github.com/DemienIlnutskiy/sliver_center
 
 environment:
   sdk: '>=2.12.0 <4.0.0'
@@ -12,6 +12,4 @@ dependencies:
     sdk: flutter
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
 
