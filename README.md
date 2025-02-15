@@ -8,25 +8,9 @@ Wrap your sliver child with `SliverCenter` to center it.  `SliverCenter` works w
 
 ## Preview
 
-<markdown-accessiblity-table>
-<table>
-  <tr>
-    <th>
-        <a href="https://github.com/DemienIlnutskiy/sliver_center/blob/main/example/lib/main.dart">Preview</a>
-    </th>
-    <th>
-        <a href="https://github.com/DemienIlnutskiy/sliver_center/blob/main/example/lib/main.dart">Preview</a>
-    </th>
-  </th>
-  <tr>
-    <th>
-    <a href="https://github.com/DemienIlnutskiy/sliver_center/blob/main/example/lib/main.dart"><img id="big_screen_preview" src='big_screen_preview.png'/></a>
-    </th>
-    <th>
-    <a href="https://github.com/DemienIlnutskiy/sliver_center/blob/main/example/lib/main.dart"><img id="small_screen_preview" src='small_screen_preview.png'/></a>
-    </th>
-  </tr>
-</p>
+| Date picker          | Time picker          |
+| -------------------- | -------------------- |
+| ![](big_screen_preview.png) | ![](small_screen_preview.png) |
 
 ## Code
 
