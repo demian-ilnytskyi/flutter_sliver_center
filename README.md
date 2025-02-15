@@ -8,8 +8,8 @@ Wrap your sliver child with `SliverCenter` to center it.  `SliverCenter` works w
 
 ## Preview
 
-| Date picker          | Time picker          |
-| -------------------- | -------------------- |
+|          Pverview           |            Pverview           |
+| --------------------------- | ----------------------------- |
 | ![](big_screen_preview.png) | ![](small_screen_preview.png) |
 
 ## Code
