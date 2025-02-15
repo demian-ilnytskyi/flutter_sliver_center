@@ -1,6 +1,6 @@
 name: sliver_center
-description: "Sliver Center For CustomScrollView"
-version: 1.0.0
+description: "A sliver that centers its child sliver within itself, primarily designed for centering slivers wrapped in SliverConstrainedCrossAxis."
+version: 1.0.0+1
 homepage: https://github.com/DemienIlnutskiy/sliver_center
 
 environment:
