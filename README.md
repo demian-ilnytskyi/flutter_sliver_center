@@ -1,4 +1,8 @@
 # SliverCenter
+<p align="center">
+  <a href="https://pub.dev/packages/sliver_center"><img src="https://img.shields.io/pub/v/sliver_center" alt="pub"></a>
+  <a href="https://app.codecov.io/github/DemienIlnutskiy/flutter_sliver_center"><img src="https://img.shields.io/codecov/c/github/DemienIlnutskiy/flutter_sliver_center" alt="pub"></a>
+</p>
 
 A Flutter widget that centers its sliver child within the available space along the cross axis.  This is particularly useful when you want to ensure a sliver, such as a `SliverList` or `SliverGrid`, is positioned in the center of its parent, regardless of the parent's size.
 
