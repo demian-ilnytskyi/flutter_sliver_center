@@ -4,8 +4,8 @@ import 'package:flutter/widgets.dart';
 class SliverCenter extends SingleChildRenderObjectWidget {
   const SliverCenter({
     required Widget sliver,
-    Key? key,
-  }) : super(key: key, child: sliver);
+    super.key,
+  }) : super(child: sliver);
 
   @override
   RenderSliver createRenderObject(BuildContext context) {
