@@ -8,7 +8,6 @@ void main() {
   const testText2 = 'Test2';
   const textKey2 = Key(testText2);
   const screenSize = Size(1840, 1024);
-
   // Helper function to initialize the test environment
   Future<void> initTest({
     required WidgetTester tester,
