@@ -16,11 +16,8 @@ void main() {
     await tester.pumpWidget(
       MaterialApp(
         home: Scaffold(
-          body: Directionality(
-            textDirection: TextDirection.ltr,
-            child: CustomScrollView(
-              slivers: [sliver],
-            ),
+          body: CustomScrollView(
+            slivers: [sliver],
           ),
         ),
       ),
