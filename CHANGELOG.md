@@ -12,3 +12,5 @@ Improve Description
 Add Tests and push coverate to CodeCov
 ## 1.1.1
 Fix flutter min version. Add Tests for flutter min version and upload result to CodeCov.
+## 1.1.1+1
+Move very_good_analysis package to dev dependencies

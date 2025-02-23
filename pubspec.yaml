@@ -1,6 +1,6 @@
 name: sliver_center
 description: "A sliver that centers its child sliver within itself, primarily designed for centering slivers wrapped in SliverConstrainedCrossAxis."
-version: 1.1.1
+version: 1.1.1+1
 homepage: https://github.com/DemienIlnutskiy/sliver_center
 
 environment:
