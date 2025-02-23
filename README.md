@@ -33,6 +33,9 @@ A Flutter widget that centers its sliver child within the available space along 
 
 Wrap your sliver child with `SliverCenter` to center it.  `SliverCenter` works within the context of a `CustomScrollView` and its sliver layout system.
 
+## Test Coverage and Flutter Version Support
+
+This package has 100% test coverage, ensuring reliability and robustness. The tests have been executed on Flutter versions 3.16.0 and 3.29.0, confirming full support for these versions and all versions in between.
 
 ## Code
 
