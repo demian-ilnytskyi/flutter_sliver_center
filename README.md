@@ -12,7 +12,9 @@ Wrap your sliver child with `SliverCenter` to center it.  `SliverCenter` works w
 
 ## Preview
 
-<img src="https://raw.githubusercontent.com//DemienIlnutskiy/flutter_sliver_center/main/assets/read_me/sliver_center_preview.gif">
+<a href="https://github.com/DemienIlnutskiy/flutter_sliver_center/blob/main/assets/read_me/sliver_center_preview.gif">
+  <img src="https://raw.githubusercontent.com/DemienIlnutskiy/flutter_sliver_center/main/assets/read_me/sliver_center_preview.gif" alt="preview">
+</a>
 
 |          Pverview           |            Pverview           |
 | --------------------------- | ----------------------------- |
