@@ -13,6 +13,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  web_build:
+  build_tests:
     uses: DemienIlnutskiy/flutter_workflows/.github/workflows/ci_build_and_test.yml@main
       
