@@ -8,16 +8,12 @@ class SliverCenter extends SingleChildRenderObjectWidget {
 
   @override
   RenderSliver createRenderObject(BuildContext context) {
-    return _RenderSliverCenter();
+    return RenderSliverCenter();
   }
 }
 
-class _RenderSliverCenter extends RenderSliver
+class RenderSliverCenter extends RenderSliver
     with RenderObjectWithChildMixin<RenderSliver> {
-  _RenderSliverCenter();
-
-  bool leftPaddingAdded = false;
-
   @override
   void setupParentData(RenderObject child) {
     if (child.parentData is! SliverPhysicalParentData) {
@@ -27,11 +23,6 @@ class _RenderSliverCenter extends RenderSliver
 
   @override
   void performLayout() {
-    if (child == null) {
-      geometry = SliverGeometry.zero;
-      return;
-    }
-
     child!.layout(constraints, parentUsesSize: true);
 
     final childGeometry = child!.geometry;
@@ -58,14 +49,6 @@ class _RenderSliverCenter extends RenderSliver
         );
       }
     }
-  }
-
-  @override
-  bool hitTestSelf({
-    required double mainAxisPosition,
-    required double crossAxisPosition,
-  }) {
-    return false;
   }
 
   @override
@@ -131,16 +114,8 @@ class _RenderSliverCenter extends RenderSliver
             }
 
             parentData.paintOffset = Offset(horizontalPadding / 2, 0);
-            leftPaddingAdded = true;
             return;
           }
-        }
-      }
-      if (leftPaddingAdded) {
-        final parentData = child!.parentData;
-        if (parentData is SliverPhysicalParentData) {
-          parentData.paintOffset = Offset.zero;
-          leftPaddingAdded = false;
         }
       }
     }
