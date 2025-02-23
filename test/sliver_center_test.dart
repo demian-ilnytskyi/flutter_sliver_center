@@ -34,13 +34,13 @@ void main() {
   }
 
   // Test to verify that the Text widget is not centered without SliverCenter
-  testWidgets('Simple Test with text widget and Without SliverCenter',
+  testWidgets('Text widget is not centered without SliverCenter',
       (tester) async {
     await initTest(
       tester: tester,
       sliver: SliverConstrainedCrossAxis(
         maxExtent: screenSize.width / 10,
-        sliver: SliverToBoxAdapter(
+        sliver: const SliverToBoxAdapter(
           child: Text(
             testText,
             key: textKey,
@@ -58,10 +58,10 @@ void main() {
   });
 
   // Test to verify that the TextButton widget is centered with SliverCenter
-  testWidgets('Simple Test with TextButton widget and with SliverCenter',
+  testWidgets('TextButton widget is centered with SliverCenter',
       (tester) async {
     String? text;
-    final Key buttonKey = Key('test_button');
+    const buttonKey = Key('test_button');
     await initTest(
       tester: tester,
       sliver: SliverCenter(
@@ -71,7 +71,7 @@ void main() {
             child: TextButton(
               key: buttonKey,
               onPressed: () => text = testText + (text ?? ''),
-              child: Text(
+              child: const Text(
                 testText,
                 key: textKey,
               ),
@@ -100,13 +100,13 @@ void main() {
   });
 
   // Test to verify that the Text widget is centered with SliverCenter
-  testWidgets('Simple Test with text widget and SliverCenter', (tester) async {
+  testWidgets('Text widget is centered with SliverCenter', (tester) async {
     await initTest(
       tester: tester,
       sliver: SliverCenter(
         sliver: SliverConstrainedCrossAxis(
           maxExtent: screenSize.width / 10,
-          sliver: SliverToBoxAdapter(
+          sliver: const SliverToBoxAdapter(
             child: Text(
               testText,
               key: textKey,
@@ -124,15 +124,16 @@ void main() {
     expect(center.dx, screenSize.width / 2);
   });
 
-  // Test to verify that the Text widget is centered with SliverCenter inside SliverConstrainedCrossAxis
+  // Test to verify that the Text widget is centered with SliverCenter
+  // inside SliverConstrainedCrossAxis
   testWidgets(
-      'Simple Test with text widget with SliverCenter after SliverConstrainedCrossAxis',
-      (tester) async {
+      'Text widget is centered with SliverCenter'
+      ' inside SliverConstrainedCrossAxis', (tester) async {
     await initTest(
       tester: tester,
       sliver: SliverConstrainedCrossAxis(
         maxExtent: screenSize.width / 10,
-        sliver: SliverCenter(
+        sliver: const SliverCenter(
           sliver: SliverToBoxAdapter(
             child: Text(
               testText,
@@ -151,10 +152,11 @@ void main() {
     expect(center.dx, screenSize.width / 2);
   });
 
-  // Test to verify that the Text widgets are not centered without SliverCenter in SliverCrossAxisGroup
+  // Test to verify that the Text widgets are not centered without SliverCenter
+  // in SliverCrossAxisGroup
   testWidgets(
-      'Test with SliverCrossAxisGroup and two text'
-      ' widget without SliverCenter', (tester) async {
+      'Text widgets are not centered without'
+      ' SliverCenter in SliverCrossAxisGroup', (tester) async {
     await initTest(
       tester: tester,
       sliver: SliverCrossAxisGroup(
@@ -163,7 +165,7 @@ void main() {
             flex: 1,
             sliver: SliverConstrainedCrossAxis(
               maxExtent: screenSize.width / 10,
-              sliver: SliverToBoxAdapter(
+              sliver: const SliverToBoxAdapter(
                 child: Text(
                   testText,
                   key: textKey,
@@ -175,7 +177,7 @@ void main() {
             flex: 1,
             sliver: SliverConstrainedCrossAxis(
               maxExtent: screenSize.width / 10,
-              sliver: SliverToBoxAdapter(
+              sliver: const SliverToBoxAdapter(
                 child: Text(
                   testText2,
                   key: textKey2,
@@ -198,10 +200,11 @@ void main() {
     expect(center2.dx, isNot(screenSize.width * 0.75));
   });
 
-  // Test to verify that the Text widgets are centered with SliverCenter in SliverCrossAxisGroup
+  // Test to verify that the Text widgets are centered with SliverCenter
+  // in SliverCrossAxisGroup
   testWidgets(
-      'Test with SliverCrossAxisGroup and two text'
-      ' widget with SliverCenter', (tester) async {
+      'Text widgets are centered with SliverCenter in SliverCrossAxisGroup',
+      (tester) async {
     await initTest(
       tester: tester,
       sliver: SliverCrossAxisGroup(
@@ -211,7 +214,7 @@ void main() {
             sliver: SliverCenter(
               sliver: SliverConstrainedCrossAxis(
                 maxExtent: screenSize.width / 10,
-                sliver: SliverToBoxAdapter(
+                sliver: const SliverToBoxAdapter(
                   child: Text(
                     testText,
                     key: textKey,
@@ -225,7 +228,7 @@ void main() {
             sliver: SliverCenter(
               sliver: SliverConstrainedCrossAxis(
                 maxExtent: screenSize.width / 10,
-                sliver: SliverToBoxAdapter(
+                sliver: const SliverToBoxAdapter(
                   child: Text(
                     testText2,
                     key: textKey2,

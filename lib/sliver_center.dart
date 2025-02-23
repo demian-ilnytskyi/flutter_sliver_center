@@ -4,7 +4,8 @@ import 'package:flutter/widgets.dart';
 class SliverCenter extends SingleChildRenderObjectWidget {
   const SliverCenter({
     required Widget sliver,
-  }) : super(child: sliver);
+    Key? key,
+  }) : super(key: key, child: sliver);
 
   @override
   RenderSliver createRenderObject(BuildContext context) {
@@ -107,7 +108,7 @@ class RenderSliverCenter extends RenderSliver
             childSize = childConstaints.crossAxisExtent;
             if (child is RenderSliverConstrainedCrossAxis) {
               final childMaxExtent =
-                  (child as RenderSliverConstrainedCrossAxis).maxExtent;
+                  (child! as RenderSliverConstrainedCrossAxis).maxExtent;
               horizontalPadding = childSize - childMaxExtent;
             } else {
               horizontalPadding = parentSize - childSize;
