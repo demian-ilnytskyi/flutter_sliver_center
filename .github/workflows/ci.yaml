@@ -12,10 +12,6 @@ concurrency:
   group: ci-$
   cancel-in-progress: true
 
-permissions:
-  id-token: write # This is required for requesting the JWT
-  contents: write # This is required for actions/checkout 
-
 jobs:
   build_tests:
     uses: DemienIlnutskiy/flutter_workflows/.github/workflows/ci_build_and_test.yml@main
