@@ -13,12 +13,20 @@ Wrap your sliver child with `SliverCenter` to center it.  `SliverCenter` works w
 ## Preview
 
 <a href="https://github.com/DemienIlnutskiy/flutter_sliver_center/blob/main/assets/read_me/sliver_center_preview.gif">
-  <img src="https://raw.githubusercontent.com/DemienIlnutskiy/flutter_sliver_center/main/assets/read_me/sliver_center_preview.gif" alt="preview">
+  <img src="https://raw.githubusercontent.com/DemienIlnutskiy/flutter_sliver_center/main/assets/read_me/sliver_center_preview.gif" alt="gif_preview">
 </a>
 
-|          Pverview           |            Pverview           |
-| --------------------------- | ----------------------------- |
-| ![](big_screen_preview.png) | ![](small_screen_preview.png) |
+<p align="center">
+  <a href="https://github.com/DemienIlnutskiy/flutter_sliver_center/blob/main/assets/read_me/big_screen_preview.png">
+    <img src="https://raw.githubusercontent.com/DemienIlnutskiy/flutter_sliver_center/main/assets/read_me/big_screen_preview.png" alt="big_screen_preview">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/DemienIlnutskiy/flutter_sliver_center/blob/main/assets/read_me/small_screen_preview.png">
+    <img src="https://raw.githubusercontent.com/DemienIlnutskiy/flutter_sliver_center/main/assets/read_me/small_screen_preview.png" alt="small_screen_preview">
+  </a>
+</p>
 
 ## Code
 
