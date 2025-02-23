@@ -1,14 +1,21 @@
 ## 0.0.1
-Init Version
+- Initial version.
+
 ## 0.0.1+1
-Updated ReadMe
+- Updated README.
+
 ## 0.0.1+2
-Updated ReadMe
+- Updated README.
+
 ## 1.0.0
-Release Version
+- Release version.
+
 ## 1.0.0+1
-Improve Description
+- Improved description.
+
 ## 1.1.0
-Add Tests and push coverate to CodeCov
+- Added tests and pushed coverage to CodeCov.
+
 ## 1.1.2
-Fix flutter min version. Add Tests for flutter min version and upload result to CodeCov.
+- Fixed Flutter minimum version.
+- Added tests for Flutter minimum version and uploaded results to CodeCov.
