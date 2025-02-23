@@ -15,4 +15,6 @@ concurrency:
 jobs:
   build_tests:
     uses: DemienIlnutskiy/flutter_workflows/.github/workflows/ci_build_and_test.yml@main
-      
+    with:
+      format_exclude: "example/**"
+      install_dependencies_exclude: "./example/**"
