@@ -10,9 +10,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  very_good_analysis: any
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  very_good_analysis: any
 
