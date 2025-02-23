@@ -19,3 +19,5 @@
 ## 1.1.1
 - Fixed Flutter minimum version.
 - Added tests for Flutter minimum version and uploaded results to CodeCov.
+## 1.1.1+1
+- Updated README.

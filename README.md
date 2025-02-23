@@ -1,7 +1,7 @@
 # SliverCenter
 <p align="center">
   <a href="https://pub.dev/packages/sliver_center"><img src="https://img.shields.io/pub/v/sliver_center" alt="pub"></a>
-  <a href="https://app.codecov.io/github/DemienIlnutskiy/flutter_sliver_center"><img src="https://img.shields.io/codecov/c/github/DemienIlnutskiy/flutter_sliver_center" alt="pub"></a>
+  <a href="https://app.codecov.io/github/DemienIlnutskiy/flutter_sliver_center"><img src="https://img.shields.io/codecov/c/github/DemienIlnutskiy/flutter_sliver_center?color=" alt="pub"></a>
   <a href="https://github.com/DemienIlnutskiy/flutter_sliver_center/actions/workflows/generate_code_coverate.yaml"><img src="https://img.shields.io/github/actions/workflow/status/DemienIlnutskiy/flutter_sliver_center/generate_code_coverate.yaml?event=push&branch=main&label=tests&logo=github" alt="tests"></a>
   <a href="https://github.com/DemienIlnutskiy/flutter_sliver_center/actions/workflows/ci.yaml">
     <img src="https://img.shields.io/github/actions/workflow/status/DemienIlnutskiy/flutter_sliver_center/ci.yaml?event=pull_request&label=Code%20Analysis%20%26%20Formatting&logo=github" 
@@ -33,6 +33,10 @@ A Flutter widget that centers its sliver child within the available space along 
 
 Wrap your sliver child with `SliverCenter` to center it.  `SliverCenter` works within the context of a `CustomScrollView` and its sliver layout system.
 
+
+## Test Coverage and Flutter Version Support
+
+This package has 100% test coverage, ensuring reliability and robustness. The tests have been executed on Flutter versions 3.16.0 and 3.29.0, confirming full support for these versions and all versions in between.
 
 ## Code
 
