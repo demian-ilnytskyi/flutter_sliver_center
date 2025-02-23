@@ -11,7 +11,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  sliver_center: ^1.1.2
+  sliver_center:
+    path: ../
 
 dev_dependencies:
   flutter_test:
