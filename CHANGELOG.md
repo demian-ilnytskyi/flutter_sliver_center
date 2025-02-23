@@ -16,6 +16,6 @@
 ## 1.1.0
 - Added tests and pushed coverage to CodeCov.
 
-## 1.1.2
+## 1.1.1
 - Fixed Flutter minimum version.
 - Added tests for Flutter minimum version and uploaded results to CodeCov.
