@@ -43,6 +43,12 @@ class HomeScreen extends StatelessWidget {
                             bottom: 10,
                           ),
                           color: color,
+                          child: TextButton(
+                            onPressed: () {},
+                            child: Text(
+                              'test_$index',
+                            ),
+                          ),
                         );
                       },
                     ),

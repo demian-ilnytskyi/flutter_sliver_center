@@ -17,3 +17,5 @@
 - Updated ReadMe
 ## 1.1.1+2
 - Move very_good_analysis package to dev dependencies
+## 1.1.2
+- Fixed hit for button inside SliverCenter
