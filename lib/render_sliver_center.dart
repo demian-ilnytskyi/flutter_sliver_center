@@ -66,7 +66,7 @@ class RenderSliverCenter extends RenderSliver
       final parentData = child!.parentData;
       if (parentData is SliverPhysicalParentData) {
         // Use the precomputed paintOffset from performLayout
-        context.paintChild(child!, offset + parentData.paintOffset);
+        context.paintChild(child!, offset + Offset(horizontalPadding ?? 0, 0));
       }
     }
   }
@@ -80,47 +80,19 @@ class RenderSliverCenter extends RenderSliver
   }) {
     if (child == null || horizontalPadding == null) return false;
 
-    // Get the child's width from its constraints.
-    final childWidth = child!.constraints.crossAxisExtent;
-    // The effective hit area for the child starts at horizontalPadding (child's
-    // left offset)
-    // and extends for childWidth.
-    final effectiveLeft = horizontalPadding!;
-    final effectiveRight = effectiveLeft + childWidth;
+    // Adjust crossAxisPosition to the child's coordinate space by
+    //subtracting horizontalPadding.
+    final adjustedCrossAxisPosition = crossAxisPosition - horizontalPadding!;
 
-    // If the hit position is outside the effective horizontal region, return
-    // false.
-    if (crossAxisPosition < effectiveLeft ||
-        crossAxisPosition > effectiveRight) {
+    if (adjustedCrossAxisPosition < 0) {
       return false;
     }
 
-    // Adjust crossAxisPosition to the child's coordinate space.
-    final adjustedCrossAxisPosition = crossAxisPosition - effectiveLeft;
-    // Delegate the hit test to the child.
     return child!.hitTest(
       result,
       mainAxisPosition: mainAxisPosition,
       crossAxisPosition: adjustedCrossAxisPosition,
     );
-  }
-
-  @override
-  bool hitTestChildren(
-    SliverHitTestResult result, {
-    required double mainAxisPosition,
-    required double crossAxisPosition,
-  }) {
-    if (child == null) return false;
-    if (horizontalPadding != null) {
-      final adjustedCrossAxisPosition = crossAxisPosition - horizontalPadding!;
-      return child!.hitTest(
-        result,
-        mainAxisPosition: mainAxisPosition,
-        crossAxisPosition: adjustedCrossAxisPosition,
-      );
-    }
-    return false;
   }
 
   @override
